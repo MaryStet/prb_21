@@ -1,0 +1,11 @@
+import sys
+
+def main(input_string):
+    word=input('Введите слово')
+    for i in range(len(word)):
+        if word[i] not in word[:i]:
+            print(word[i], word.count(word[i]))
+
+if __name__ == '__main__':
+     main(sys.argv[-1])
+     
