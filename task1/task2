@@ -1,0 +1,13 @@
+import sys
+
+def main(str):
+    s = input('Введите слово')
+    s = s.lower()
+    s = s.replace(' ', '')
+    if s == s[::-1]:
+        print("палиндром")
+    else:
+        print("не палиндром")
+        
+if __name__ == '__main__':
+    main(sys.argv[-1])
