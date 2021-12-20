@@ -1,0 +1,11 @@
+import sys
+
+def main(input_string):
+    s=list(input('Введите строку символов'))
+    simb=len(s)
+    print(simb)
+    print(input_string[::-1])
+    
+if __name__ == '__main__':
+    main(sys.argv[-1])
+    
